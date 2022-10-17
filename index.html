@@ -13,6 +13,7 @@
     <!-- Bootstrap Local-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
 
     <!-- Java Script Local-->
@@ -20,8 +21,9 @@
     <script src="js/jQuery_v3.3.1.js"></script>
     <script src="js/popper_v.1.14.3.js"></script>
 
+    <link rel="icon" type="imagem/png" href="img/icons/beer.png" />
 
-    <title>Document</title>
+    <title>Delivery</title>
 </head>
 
 <body>
@@ -46,28 +48,34 @@
                 <nav>
                     <ul class="nav nav-pills nav-fill">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="img/icons/list.png" width="25" height="25" alt="Menu principal">
+                            <a class="nav-link_estilo" href="#">
+                                <img src="img/icons/list.png" width="25" height="25" alt="Lista de produtos">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="img/icons/call.png" width="25" height="25" alt="Menu principal">
+                            <a class="nav-link_estilo" href="#">
+                                <img src="img/icons/call.png" width="25" height="25" alt="Telefone para contato">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="img/icons/cart.png" width="25" height="25" alt="Menu principal">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <form class="form-inline justify-content-around">
+                            <a class="nav-link_estilo" href="#">
 
-                                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                    <img src="img/icons/research.png" width="21" height="21" alt="Menu principal">
-                                </button>
-                            </form>
+                                <img src="img/icons/cart.png" width="25" height="25" alt="Carrinho de compras">
+                                <span class="badge badge-red">0</span>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <form class="form-inline justify-content-around ml-2 mt-1 mb-2">
+
+                                    <input class="form-control mr-sm-2 text-center mb-2" type="search"
+                                        placeholder="Pesquisar" aria-label="Pesquisar">
+                                    <button class="btn_nav btn-outline-success my-2 my-sm-0" type="submit">
+                                        <img src="img/icons/research.png" width="21" height="21" alt="Menu principal">
+                                    </button>
+                                </form>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -75,25 +83,29 @@
         </div>
     </header>
     <section>
-        <article class="container-fluid">
+        <article class="container-fluid mb-2">
+
+            <h3 class="text-center">
+                Promoções e Ofertas
+            </h3>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner max-hight_carrosel">
                     <div class="carousel-item active">
                         <img class="d-block w-100" class="img-fluid"
-                            src="https://api.lorem.space/image/movie?w=220&amp;amp;amp;amp;h=150" alt="Primeiro Slide">
+                            src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=220" alt="Primeiro Slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" class="img-fluid"
-                            src="https://api.lorem.space/image/movie?w=220&amp;amp;amp;amp;h=150" alt="Segundo Slide">
+                            src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=220" alt="Segundo Slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" class="img-fluid"
-                            src="https://api.lorem.space/image/movie?w=220&amp;amp;amp;amp;h=150" alt="Terceiro Slide">
+                            src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=220" alt="Terceiro Slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -107,8 +119,499 @@
             </div>
         </article>
     </section>
-    <footer>
+    <section class="container-fluid">
+        <button type="button" class="btn btn-secondary_estilo btn-lg btn-block mb-2" type="button" data-toggle="collapse"
+            data-target="#bebidas" aria-expanded="false" aria-controls="bebidas">
+            <h3 class="text-center">
+                Bebidas
+            </h3>
+        </button>
+        <div class="collapse" id="bebidas">
+            <div class="card-estilo card-boby">
+                <ul class="list-unstyled text-center">
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
 
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <button type="button" class="btn btn-secondary_estilo btn-lg btn-block mb-2" type="button" data-toggle="collapse"
+            data-target="#alimentos" aria-expanded="false" aria-controls="alimentos">
+            <h3 class="text-center">
+                Alimentos
+            </h3>
+        </button>
+        <div class="collapse" id="alimentos">
+            <div class="card-estilo card-boby">
+                <ul class="list-unstyled text-center">
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <button type="button" class="btn btn-secondary_estilo btn-lg btn-block mb-2" type="button" data-toggle="collapse"
+            data-target="#tabacaria" aria-expanded="false" aria-controls="tabacaria">
+            <h3 class="text-center">
+                Tabacaria
+            </h3>
+        </button>
+        <div class="collapse" id="tabacaria">
+            <div class="card-estilo card-boby">
+                <ul class="list-unstyled text-center">
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li class="d-inline-block">
+                        <article class="row max-dimensao_produtos">
+                            <figure class="col-6 align-content-center">
+                                <img class="img-fluid"
+                                    src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=150"
+                                    alt="Primeiro Slide">
+
+                                <div class="input-group_estilo mt-3 mb-3">
+                                    <div class="input-group-prepend" id="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/subt.png" width="22" height="22" alt="Retirar item">
+                                        </button>
+
+                                        <input type="text" class="form-control text-center" placeholder="Un."
+                                            aria-label="Example text with two button addons"
+                                            aria-describedby="button-addon3">
+                                        <button class="btn p-1" type="button">
+                                            <img src="img/icons/adicao.png" width="20" height="20" alt="Adicionar item">
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="col-6 justify-content-center text-center">
+                                <p class="mb-2">
+                                    Descrição do produto
+                                </p>
+                                <p class="mb-2">
+                                    Valor do produto
+                                </p>
+
+                                <button type="button" class="btn_estilo btn-success container">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center sub">
+        <p>
+            Rodrigo Dos S. Honda - Desenvolvimento WEB
+        </p>
     </footer>
 
 </body>
